@@ -1,0 +1,453 @@
+body {
+	font-family:'Open Sans', sans-serif;
+  padding-top: 103px;
+  /*position: relative;*/
+}
+
+.navbar {
+  margin-bottom: 0px;
+  padding: 30px 15px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+@media (max-width: 505px) {
+  .navbar-header {
+      position:relative;
+
+  } 
+
+    .navbar img {
+        position:absolute;
+        top:0;
+        bottom:0;
+        margin:auto;
+
+  }
+
+  #large-image {
+    display: none;
+  }
+
+  #small-image {
+    display: block;
+  }
+}
+
+@media (min-width: 506px){
+  #large-image {
+    display: block;
+  }
+
+  #small-image {
+    display: none;
+  }
+}
+
+
+
+.fill-screen {
+  
+/*  this is the style recommended by the Pluralsight lesson  - it doesn't seem to keep the width of the image correct for the
+XS viewport - this is because the 'cover' attribute will scale the image large enough to cover the height of the entire viewport
+so we need portrait and landscape images*/
+  background-position: center center;
+  background-size: cover;
+  
+  max-width:100%;
+
+  
+  /*The below style will make the image width scale down for the smart phone properly*/
+  /*however it seems to make the width-height of the fill-screen div equal to the viewport*/
+  /*width: 100%;
+  max-width: 1300px; 
+  background-size: 100%;
+  background-repeat:no-repeat;*/
+  
+}
+
+/*default background images for background images*/
+
+.bridge{
+  background-image: url(images/ls-confetti-reg.jpg);
+}
+
+.middle{
+  background-image: url(images/ls-steps-reg.jpg);
+}
+
+.bottom{
+  background-image: url(images/ls-vintageSocks-reg.jpg);
+}
+
+/*background images for small viewports (smartphone portrait)*/
+@media (max-width: 445px){
+
+    .bridge{
+      background-image: url(images/port-embrace-reg.jpg);
+    }
+
+    .middle{
+      background-image: url(images/port-flowers-reg.jpg);
+    }
+
+    .bottom{
+      background-image: url(images/port-chandelier-reg.jpg);
+    }
+}
+
+.fixed-attachment {
+  background-attachment: fixed;
+}
+
+/*this is needed for iOS devices - 736 is the width for iPhone 6 S Plus in landscape*/
+@media(max-width: 736px){
+  .fixed-attachment{
+    background-attachment: scroll;
+  }
+}
+
+.down-button{
+  position:absolute;
+  bottom:40px;
+  width:100%;
+  text-align: center;
+}
+
+.down-button i {
+  color:white;
+}
+
+
+
+.text-banner {
+  text-align: center;
+  margin: 40px 20px;
+}
+
+.text-banner h1 {
+  font-size: 44px;
+}
+
+.text-banner p {
+  
+  text-align: justify;
+}
+
+.certification-section{
+  margin:50px;
+}
+
+/*.certification-section h1{
+  font-size: 44px;
+}
+*/
+
+.activity-element{
+  text-align: center;
+  position: 
+}
+
+
+.activity-element img {
+  height:100 px;
+  width:100 px;
+}
+
+.contact-us {
+  margin:50px;
+  text-align: center;
+}
+
+.content-filler {
+  min-height: 150px;
+}
+
+.img-responsive {
+  /*margin-left: 20px;*/
+  margin: 0px auto;
+
+}
+
+.title-row {
+  position: relative;
+  min-height: 300px;
+}
+
+.title-image {
+  position: absolute;
+  padding: 20px;
+  top:50%;
+  left:50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform:translate(-50%,-50%);
+
+}
+
+.navbar-inverse .navbar-nav>li>a {
+    color: #e09f64;
+}
+
+.navbar-inverse {
+    background-color: black;
+    border-color: black;
+}
+
+
+
+.cbp-af-header-shrink {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  opacity: 0.9;
+
+}
+
+footer {
+	background-color: #333;
+	color: #ddd;
+	padding: 20px;
+	text-align: center;
+}
+
+
+aside {
+	background-color: #f7f7f7;
+	text-align: center;
+	padding-top: 40px;
+}
+
+.range-list {
+	padding-bottom: 40px;
+	padding-top: 40px;
+
+}
+
+.range-list a {
+	padding:10px;
+
+}
+
+.range-list h4 {
+	margin-bottom: 40px;
+	color: darkorange;
+	font-weight: bold;
+
+}
+
+.sports-icon-list  img {
+	height: 100px;
+	width: 100px;
+}
+
+.sports-icon-list  a h6 {
+	color:green;
+}
+
+.sports-icon-list  a h6 {
+	margin-top: 2px;
+	margin-bottom: 14px;
+}
+
+.sports-icon-list {
+	padding: 20px;
+	background-color: grey;
+}
+
+.sports-list-top div {
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto; 
+}
+
+.sports-list-top a {
+	display: inline-block;
+	margin-left: 30px;
+	margin-right: 30px;
+
+}
+
+@media (max-width: 767px){
+	.range-list h4 {
+		margin-bottom: 40px;
+		color: darkorange;
+		font-weight: bold;
+		display: inline;
+		font-size: 18pt;
+	}
+
+	.range-list a {
+		display: block;
+	}
+
+	.range-list img {
+		width: 33%;
+		height: 33%;
+	}
+}
+
+/*columns same height code*/
+/* USAGE
+<div class="row">
+  <div class="row-height">
+    <div class="col-xs-2 col-xs-height col-xs-middle">
+      <div class="inside"></div>
+    </div>
+    <div class="col-xs-4 col-lg-5 col-xs-height col-xs-middle">
+      <div class="inside"></div>
+    </div>
+  </div>
+</div>
+*/
+
+/* content styles */
+
+.inside {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background: #ededed;
+  background: -webkit-gradient(linear, left top, left bottom,color-stop(0%, #f4f4f4), color-stop(100%, #ededed));
+  background: -moz-linear-gradient(top, #f4f4f4 0%, #ededed 100%);
+  background: -ms-linear-gradient(top, #f4f4f4 0%, #ededed 100%);
+}
+
+ul {
+    list-style-type: none;
+    padding:0px;
+}
+
+li {
+
+    background-repeat: no-repeat;
+    background-position: 0px 50%;
+    padding-left: 7px;
+}
+
+
+.inside-full-height {
+  /*
+  // if you want to give content full height give him height: 100%;
+  // with content full height you can't apply margins to the content
+  // content full height does not work in ie http://stackoverflow.com/questions/27384433/ie-display-table-cell-child-ignores-height-100
+  */
+  height: 100%;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* columns of same height styles */
+
+.row-height {
+  display: table;
+  table-layout: fixed;
+  height: 100%;
+  width: 100%;
+}
+.col-height {
+  display: table-cell;
+  float: none;
+  height: 100%;
+}
+.col-top {
+  vertical-align: top;
+}
+.col-middle {
+  vertical-align: middle;
+}
+.col-bottom {
+  vertical-align: bottom;
+}
+
+@media (min-width: 480px) {
+  .row-xs-height {
+    display: table;
+    table-layout: fixed;
+    height: 100%;
+    width: 100%;
+  }
+  .col-xs-height {
+    display: table-cell;
+    float: none;
+    height: 100%;
+  }
+  .col-xs-top {
+    vertical-align: top;
+  }
+  .col-xs-middle {
+    vertical-align: middle;
+  }
+  .col-xs-bottom {
+    vertical-align: bottom;
+  }
+}
+
+@media (min-width: 768px) {
+  .row-sm-height {
+    display: table;
+    table-layout: fixed;
+    height: 100%;
+    width: 100%;
+  }
+  .col-sm-height {
+    display: table-cell;
+    float: none;
+    height: 100%;
+  }
+  .col-sm-top {
+    vertical-align: top;
+  }
+  .col-sm-middle {
+    vertical-align: middle;
+  }
+  .col-sm-bottom {
+    vertical-align: bottom;
+  }
+}
+
+@media (min-width: 992px) {
+  .row-md-height {
+    display: table;
+    table-layout: fixed;
+    height: 100%;
+    width: 100%;
+  }
+  .col-md-height {
+    display: table-cell;
+    float: none;
+    height: 100%;
+  }
+  .col-md-top {
+    vertical-align: top;
+  }
+  .col-md-middle {
+    vertical-align: middle;
+  }
+  .col-md-bottom {
+    vertical-align: bottom;
+  }
+}
+
+@media (min-width: 1200px) {
+  .row-lg-height {
+    display: table;
+    table-layout: fixed;
+    height: 100%;
+    width: 100%;
+  }
+  .col-lg-height {
+    display: table-cell;
+    float: none;
+    height: 100%;
+  }
+  .col-lg-top {
+    vertical-align: top;
+  }
+  .col-lg-middle {
+    vertical-align: middle;
+  }
+  .col-lg-bottom {
+    vertical-align: bottom;
+  }
+}
+
+
