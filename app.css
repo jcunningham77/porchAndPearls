@@ -1,6 +1,9 @@
 body {
 	font-family:'Open Sans', sans-serif;
   padding-top: 103px;
+  /*background-color: #FFD700;*/
+  background-color: white;
+  font-family: Georgia, serif;
   /*position: relative;*/
 }
 
@@ -9,6 +12,24 @@ body {
   padding: 30px 15px;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
+  background-color: #FFD700;
+  border-color: #FFD700;
+}
+
+.navbar-inverse {
+    background-color: #FFD700;
+    border-color: #FFD700;
+}
+
+
+.navbar-inverse .navbar-nav>li>a {
+    color: #cd007b;
+}
+
+.navbar-brand {
+  color: #cd007b !important;
+  font-family: Georgia, serif;
+  font-size: 20px;
 }
 
 @media (max-width: 505px) {
@@ -44,6 +65,20 @@ body {
   }
 }
 
+.home-text {
+
+  /*color:#FFD700;*/
+  color:white;
+  padding-top: 103px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+  font-size: 20px;
+  font-style: italic;
+}
+
 
 
 .fill-screen {
@@ -69,11 +104,16 @@ so we need portrait and landscape images*/
 /*default background images for background images*/
 
 .bridge{
-  background-image: url(images/ls-confetti-reg.jpg);
+  /*background-image: url(images/ls-confetti-reg.jpg);*/
+  background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(images/ls-confetti-reg.jpg);
 }
 
-.middle{
+.second{
   background-image: url(images/ls-steps-reg.jpg);
+}
+
+.third{
+  background-image: url(images/ls-night-reg.jpg);
 }
 
 .bottom{
@@ -84,11 +124,16 @@ so we need portrait and landscape images*/
 @media (max-width: 445px){
 
     .bridge{
-      background-image: url(images/port-embrace-reg.jpg);
+      /*background-image: url(images/port-embrace-reg.jpg);*/
+      background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(images/port-embrace-reg.jpg);
     }
 
-    .middle{
+    .second{
       background-image: url(images/port-flowers-reg.jpg);
+    }
+
+    .third{
+      background-image: url(images/port-hair-reg.jpg);
     }
 
     .bottom{
@@ -123,6 +168,7 @@ so we need portrait and landscape images*/
 .text-banner {
   text-align: center;
   margin: 40px 20px;
+  background-color: white;
 }
 
 .text-banner h1 {
@@ -185,26 +231,21 @@ so we need portrait and landscape images*/
 
 }
 
-.navbar-inverse .navbar-nav>li>a {
-    color: #e09f64;
-}
 
-.navbar-inverse {
-    background-color: black;
-    border-color: black;
-}
+
+
 
 
 
 .cbp-af-header-shrink {
   padding-top: 5px;
   padding-bottom: 5px;
-  opacity: 0.9;
+  opacity: 0.98;
 
 }
 
 footer {
-	background-color: #333;
+	  background-color: #FFD700;
 	color: #ddd;
 	padding: 20px;
 	text-align: center;
