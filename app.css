@@ -1,7 +1,7 @@
 body {
 	font-family:'Open Sans', sans-serif;
   padding-top: 103px;
-  /*background-color: #FFD700;*/
+  /*background-color: #f3e1bd;*/
   background-color: white;
   font-family: Georgia, serif;
   /*position: relative;*/
@@ -12,13 +12,13 @@ body {
   padding: 30px 15px;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
-  background-color: #FFD700;
-  border-color: #FFD700;
+  background-color: #f3e1bd;
+  border-color: #f3e1bd;
 }
 
 .navbar-inverse {
-    background-color: #FFD700;
-    border-color: #FFD700;
+    background-color: #f3e1bd;
+    border-color: #f3e1bd;
 }
 
 
@@ -67,7 +67,7 @@ body {
 
 .home-text {
 
-  /*color:#FFD700;*/
+  /*color:#f3e1bd;*/
   color:white;
   padding-top: 103px;
   padding-right: 15px;
@@ -245,7 +245,7 @@ so we need portrait and landscape images*/
 }
 
 footer {
-	  background-color: #FFD700;
+	  background-color: #f3e1bd;
 	color: #ddd;
 	padding: 20px;
 	text-align: center;
