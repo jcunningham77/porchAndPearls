@@ -24,6 +24,16 @@ body {
 
 .navbar-inverse .navbar-nav>li>a {
     color: #cd007b;
+    font-family: WolfInTheCity;
+    font-size: 25pt;
+}
+
+@font-face{
+  font-family: WolfInTheCity;
+  src:url(fonts/Wolf.ttf);
+  font-weight: normal;
+  font-style:  normal;
+
 }
 
 .navbar-brand {
@@ -47,12 +57,12 @@ body {
   }
 
   #large-image {
-    display: none;
-  }
-
-  #small-image {
     display: block;
   }
+
+/*  #small-image {
+    display: block;
+  }*/
 }
 
 @media (min-width: 506px){
@@ -110,6 +120,7 @@ so we need portrait and landscape images*/
 
 .second{
   background-image: url(images/ls-steps-reg.jpg);
+  position: relative;
 }
 
 .third{
@@ -118,6 +129,7 @@ so we need portrait and landscape images*/
 
 .bottom{
   background-image: url(images/ls-vintageSocks-reg.jpg);
+  position:relative;
 }
 
 /*background images for small viewports (smartphone portrait)*/
@@ -134,12 +146,46 @@ so we need portrait and landscape images*/
 
     .third{
       background-image: url(images/port-hair-reg.jpg);
+      position:relative;
     }
 
     .bottom{
       background-image: url(images/port-chandelier-reg.jpg);
+      position:relative;
     }
 }
+
+.credit {
+  position: absolute; 
+  right: 0; 
+  bottom: 0; 
+  font-family: Tahoma;
+  font-size: 9pt;
+  font-style: bold;
+  padding-right: 5px;
+}
+
+.credit-white{
+  color:white;
+}
+
+/*@media (max-width: 445px){
+  .credit-steps{
+    display:none;
+  }  
+}*/
+@media (min-width: 445px){
+  .credit-hair {
+    display:none;
+  }  
+}
+
+@media (min-width: 445px){
+  .credit-centerpiece{
+    display:none;
+  }  
+}
+
 
 .fixed-attachment {
   background-attachment: fixed;
@@ -169,6 +215,11 @@ so we need portrait and landscape images*/
   text-align: center;
   margin: 40px 20px;
   background-color: white;
+
+  /*font changes for body text*/
+  font-style: italic;
+  font-family: Georgia,serif;
+
 }
 
 .text-banner h1 {
@@ -177,7 +228,7 @@ so we need portrait and landscape images*/
 
 .text-banner p {
   
-  text-align: justify;
+  text-align: center;
 }
 
 .certification-section{

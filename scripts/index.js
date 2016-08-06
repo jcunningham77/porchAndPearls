@@ -23,7 +23,8 @@ $(function(){
 		$('html,body').stop().animate({
 			scrollTop:$($(this).attr('href')).offset().top-offset
 		},1500,'easeInOutExpo');
-		event.preventDefault();
+		//the below line was causing console errors
+		// event.preventDefault();
 	});
 
 
