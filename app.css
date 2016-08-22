@@ -126,6 +126,10 @@ so we need portrait and landscape images*/
   background-image: url(images/ls-night-reg.jpg);
 }
 
+.fourth{
+  background-image: url(images/ls-night-reg.jpg);
+}
+
 .bottom{
   background-image: url(images/ls-vintageSocks-reg.jpg);
   position:relative;
@@ -147,6 +151,11 @@ so we need portrait and landscape images*/
       background-image: url(images/port-hair-reg.jpg);
       position:relative;
     }
+
+    .fourth{
+      background-image: url(images/port-hair-reg.jpg);
+      position:relative;
+    }    
 
     .bottom{
       background-image: url(images/port-chandelier-reg.jpg);
@@ -311,7 +320,7 @@ li {
   margin-bottom: 0;
 }
 
-/* columns of same height styles */
+
 
 
 
