@@ -20,26 +20,80 @@ body {
 }
 
 
-.navbar-inverse .navbar-nav>li>a {
+.navbar-inverse .navbar-nav li a {
     color: #cd007b;
-    font-family: WolfInTheCity;
-    font-size: 25pt;
+    font-family: Florabella;
+    font-size: 20pt;
+    /*padding-left:20px;*/
+    line-height: 47px;
 }
 
-.navbar-brand {
+.navbar-inverse .navbar-toggle {
+  border-color: #cd007b;  
+}
+
+.navbar-inverse .navbar-toggle .icon-bar {  
+    background-color: #cd007b;
+}
+
+
+@media (max-width: 857px) {
+    .navbar-header {
+        float: none;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-nav {
+        float: none!important;
+        margin: 7.5px -15px;
+    }
+    .navbar-nav>li {
+        float: none;
+    }
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .navbar-text {
+        float: none;
+        margin: 15px 0;
+    }
+    /* since 3.1.0 */
+    .navbar-collapse.collapse.in { 
+        display: block!important;
+    }
+    .collapsing {
+        overflow: hidden!important;
+    }
+}
+
+/*.navbar-brand {
   color: #cd007b !important;
   font-family: Georgia, serif;
   font-size: 20px;
-}
+}*/
 
 @font-face{
   font-family: WolfInTheCity;
   src:url(fonts/Wolf.ttf);
   font-weight: normal;
   font-style:  normal;
-
 }
 
+@font-face{
+  font-family: Florabella;
+  src:url(fonts/Florabella.ttf);
+  font-weight: lighter;
+  font-style:  normal;
+}
 
 /*media queries for extra small screens*/
 @media (max-width: 505px) {
