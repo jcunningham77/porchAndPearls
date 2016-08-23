@@ -58,9 +58,12 @@ body {
 
   /*Add small image code here if we need one for mobile displays */
   #large-image {
-    display: block;
+    display: none;
   }
 
+  #small-image {
+    display: block;
+  }
 
 
 }
