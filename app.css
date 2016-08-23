@@ -127,7 +127,7 @@ so we need portrait and landscape images*/
 }
 
 .fourth{
-  background-image: url(images/ls-night-reg.jpg);
+  background-image: url(images/ls-subway-reg-topBuffer.png);
 }
 
 .bottom{
@@ -141,6 +141,7 @@ so we need portrait and landscape images*/
     .first{
       /*background-image: url(images/port-embrace-reg.jpg);*/
       background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(images/port-embrace-reg.jpg);
+      position: relative;
     }
 
     .second{
@@ -153,8 +154,8 @@ so we need portrait and landscape images*/
     }
 
     .fourth{
-      background-image: url(images/port-hair-reg.jpg);
-      position:relative;
+      background-image: url(images/port-subway-reg.png);
+      
     }    
 
     .bottom{
