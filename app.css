@@ -75,8 +75,8 @@ body {
         float: none;
     }
     .navbar-nav>li>a {
-        padding-top: 10px;
-        padding-bottom: 10px;
+        padding-top: 5px;
+        padding-bottom: 5px;
     }
     .navbar-text {
         float: none;
