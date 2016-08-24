@@ -28,8 +28,17 @@ body {
     line-height: 47px;
 }
 
+.navbar-inverse .navbar-collapse {
+  border-color: #cd007b;
+}
+
 .navbar-inverse .navbar-toggle {
-  border-color: #cd007b;  
+  border-color: #cd007b; 
+  background-color: #f3e1bd; 
+}
+
+.navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover {
+  background-color: #f3e1bd; 
 }
 
 .navbar-inverse .navbar-toggle .icon-bar {  
