@@ -315,6 +315,10 @@ so we need portrait and landscape images*/
   text-align: center;
 }
 
+.contact-us a {
+  color: #cd007b;
+}
+
 
 .img-responsive {
   /*margin-left: 20px;*/
